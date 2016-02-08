@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
 
+@property (weak, nonatomic) IBOutlet UITableView *tblPhotos;
+@property (nonatomic) NSMutableArray *photosArray;
+@property (weak, nonatomic) IBOutlet UISearchBar *flickrSearch;
 
 @end
 
